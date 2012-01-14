@@ -93,7 +93,7 @@ class stop_sopa {
 	}
 	
 	public function scripts() {
-		wp_register_style( 'stopsopa', plugins_url( 'stop-sopa.css', __FILE__ ) );
+		wp_register_style( 'stopsopa', plugins_url( 'protest-sopa-pipa.css', __FILE__ ) );
 		wp_enqueue_style( 'stopsopa' );
 		wp_enqueue_script( 'jquery' );
 	}
