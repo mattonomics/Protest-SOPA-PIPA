@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Stop SOPA
+Plugin Name: Protest SOPA/PIPA
 Author: Matt Gross
 Description: This plugin displays a SOPA/PIPA protest message on 1/18/12 from 8am-8pm EST. After that time the message will no longer display and the plugin will automatically deactivate itself.
 License: GPLv2
