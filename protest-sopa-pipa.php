@@ -32,7 +32,7 @@ class stop_sopa {
 	public $end = 1326934800; // 1/18/2012 8pm EST
 
 	public function __construct() {		
-		if ( $this->start <= time() <= $this->end )
+		if ( ( time() > $this->start ) && ( time() < $this->end ) )
 			$this->on();
 		elseif ( time() > $this->end )
 			$this->off();
