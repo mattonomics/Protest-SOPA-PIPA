@@ -1,4 +1,4 @@
-#stop-sopa-background {
+#protest-sopa-pipa-background {
 	background: #000;
 	left: 0;
 	position: absolute;
@@ -7,60 +7,60 @@
 	z-index: 1000;
 }
 
-#stop-sopa-container {
+#protest-sopa-pipa-container {
 	width: 600px;
 	margin: 0 auto;
 	color: #111;
 }
 
-#stop-sopa-header {
+#protest-sopa-pipa-header {
 	color: #fff;
 	
 }
-#stop-sopa-content {
+#protest-sopa-pipa-content {
 	background: #fff;
 	margin-top: -24px;
 	padding: 12px;
 	/* remove  min-height: 1000px; */
 }
 
-#stop-sopa-content {
+#protest-sopa-pipa-content {
 	font-size: 16px;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	line-height: 25px;
 }
 
-#stop-sopa-content p, #stop-sopa-content li {
+#protest-sopa-pipa-content p, #protest-sopa-pipa-content li {
 	margin-bottom: 25px;
 	float: none;
 	text-align: left;
 }
 
-#stop-sopa-content ul, #stop-sopa-content ol {
+#protest-sopa-pipa-content ul, #protest-sopa-pipa-content ol {
 	list-style-position: outside;
 	margin-left: 25px;
 }
 
-#stop-sopa-content ul {
+#protest-sopa-pipa-content ul {
 	list-style-type: square;
 }
 
-#stop-sopa-content a {
+#protest-sopa-pipa-content a {
 	border: none;
 	text-decoration: none;
 	color: #2361a1;
 }
 
-#stop-sopa-content a:hover {
+#protest-sopa-pipa-content a:hover {
 	text-decoration: underline;
 }
 
-#stop-sopa-warning {
+#protest-sopa-pipa-warning {
 	color: #e00;
 	margin-bottom: 25px;
 }
 
-.stop-sopa-font {
+.protest-sopa-pipa-font {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 100px;
 	font-size: 80px;

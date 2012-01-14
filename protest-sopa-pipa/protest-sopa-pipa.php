@@ -52,25 +52,25 @@ class protest_sopa_pipa {
 	public function html() {
 		$site = defined( 'WP_ALLOW_MULTISITE' ) && WP_ALLOW_MULTISITE ? network_site_url() : site_url();
 		$site = untrailingslashit( $site );
-		?><div id="stop-sopa-background">
-			<div id="stop-sopa-container">
-				<div class="stop-sopa-font" id="stop-sopa-header"><?php _e( 'STOP SOPA', 'stop-sopa' ); ?></div>
-				<div id="stop-sopa-content">
-					<h2 id="stop-sopa-warning" class="stop-sopa-font"><?php _e( 'CENSORED', 'stop-sopa' ); ?></h2>
-					<p><?php esc_html_e( 'The United States Congress has proposed legislation that has the potential to destroy the free and open internet as we know it. This legislation, called SOPA in the House and PIPA in the Senate, is the epitome of special interests over the greater public good.', 'stop-sopa' ); ?></p>
-					<p><?php esc_html_e( 'It is of the utmost importance that all citizens who value their constitutional right to the freedom of speech and who believe in the free exchange of ideas, take a stand against SOPA/PIPA. No longer can we stand by as our elected leaders cave to the whims of the few as the many are forced into bondage and suffering.', 'stop-sopa' ); ?></p>
-					<p><?php esc_html_e( "It is for this reason that ", 'stop-sopa' ); echo "<strong>$site</strong>"; esc_html_e( " will be participating in the Internet Blackout today, January 18th, from 8am-8pm EST. We have chosen to stand in solidarity against the forces who wish to censor and otherwise control the flow of information on the internet.", 'stop-sopa' ) ?></p>
-					<p><?php esc_html_e( "Additionally, we encourage you to inform yourself about the damaging consequences of passing such dangerous legislation. We also encourage you to call, email or write your congressperson and inform them that you will not sit idly by while they undermine the free internet.", 'stop-sopa' ); ?></p>
-					<p><?php esc_html_e( 'Below, you will find resources that will help you understand the devastating consequences of SOPA/PIPA. You will also find information on how to contact your elected leaders.', 'stop-sopa' ); ?></p>
-					<p><?php esc_html_e( 'If we stand in solidarity against SOPA/PIPA, we can defeat it and in doing so alter the course of human history. Please, take action now.', 'stop-sopa' ); ?></p>
+		?><div id="protest-sopa-pipa-background">
+			<div id="protest-sopa-pipa-container">
+				<div class="protest-sopa-pipa-font" id="protest-sopa-pipa-header"><?php _e( 'STOP SOPA', 'protest-sopa-pipa' ); ?></div>
+				<div id="protest-sopa-pipa-content">
+					<h2 id="protest-sopa-pipa-warning" class="protest-sopa-pipa-font"><?php _e( 'CENSORED', 'protest-sopa-pipa' ); ?></h2>
+					<p><?php esc_html_e( 'The United States Congress has proposed legislation that has the potential to destroy the free and open internet as we know it. This legislation, called SOPA in the House and PIPA in the Senate, is the epitome of special interests over the greater public good.', 'protest-sopa-pipa' ); ?></p>
+					<p><?php esc_html_e( 'It is of the utmost importance that all citizens who value their constitutional right to the freedom of speech and who believe in the free exchange of ideas, take a stand against SOPA/PIPA. No longer can we stand by as our elected leaders cave to the whims of the few as the many are forced into bondage and suffering.', 'protest-sopa-pipa' ); ?></p>
+					<p><?php esc_html_e( "It is for this reason that ", 'protest-sopa-pipa' ); echo "<strong>$site</strong>"; esc_html_e( " will be participating in the Internet Blackout today, January 18th, from 8am-8pm EST. We have chosen to stand in solidarity against the forces who wish to censor and otherwise control the flow of information on the internet.", 'protest-sopa-pipa' ) ?></p>
+					<p><?php esc_html_e( "Additionally, we encourage you to inform yourself about the damaging consequences of passing such dangerous legislation. We also encourage you to call, email or write your congressperson and inform them that you will not sit idly by while they undermine the free internet.", 'protest-sopa-pipa' ); ?></p>
+					<p><?php esc_html_e( 'Below, you will find resources that will help you understand the devastating consequences of SOPA/PIPA. You will also find information on how to contact your elected leaders.', 'protest-sopa-pipa' ); ?></p>
+					<p><?php esc_html_e( 'If we stand in solidarity against SOPA/PIPA, we can defeat it and in doing so alter the course of human history. Please, take action now.', 'protest-sopa-pipa' ); ?></p>
 					<ol>
-						<li><a href="http://projects.propublica.org/sopa/"> <?php esc_html_e( 'Click here to find out where your member of Congress stands on this issue.', 'stop-sopa' ); ?></a></li>
-						<li><a href="http://www.house.gov/representatives/"><?php esc_html_e( 'Click here for a list of Representatives and their contact number. Call them and express your concern about SOPA and PIPA.', 'stop-sopa' ); ?></a></li>
-						<li><p><?php esc_html_e( 'Find out what others have to say about SOPA/PIPA:', 'stop-sopa' ); ?></p>
+						<li><a href="http://projects.propublica.org/sopa/"> <?php esc_html_e( 'Click here to find out where your member of Congress stands on this issue.', 'protest-sopa-pipa' ); ?></a></li>
+						<li><a href="http://www.house.gov/representatives/"><?php esc_html_e( 'Click here for a list of Representatives and their contact number. Call them and express your concern about SOPA and PIPA.', 'protest-sopa-pipa' ); ?></a></li>
+						<li><p><?php esc_html_e( 'Find out what others have to say about SOPA/PIPA:', 'protest-sopa-pipa' ); ?></p>
 							<ul>
-								<li><a href="http://www.cdt.org/report/growing-chorus-opposition-stop-online-piracy-act"><?php esc_html_e( 'A comprehensive list of opinions about SOPA/PIPA from sources such as the inventors of the internet, The Heritage Foundation, the ACLU and many others.', 'stop-sopa' ); ?></a></li>
-								<li><a href="http://wordpress.org/news/2012/01/help-stop-sopa-pipa/"><?php esc_html_e( 'A great write up from WordPress, along with a video that makes SOPA/PIPA easy to understand.', 'stop-sopa' ); ?></a></li>
-								<li><a href="http://boingboing.net/2011/12/02/stephen-colbert-explains-sopa.html"><?php esc_html_e( 'A very hilarious video from Stephen Colbert that satirizes the utter insanity of SOPA/PIPA.', 'stop-sopa' ); ?></a></li>
+								<li><a href="http://www.cdt.org/report/growing-chorus-opposition-stop-online-piracy-act"><?php esc_html_e( 'A comprehensive list of opinions about SOPA/PIPA from sources such as the inventors of the internet, The Heritage Foundation, the ACLU and many others.', 'protest-sopa-pipa' ); ?></a></li>
+								<li><a href="http://wordpress.org/news/2012/01/help-stop-sopa-pipa/"><?php esc_html_e( 'A great write up from WordPress, along with a video that makes SOPA/PIPA easy to understand.', 'protest-sopa-pipa' ); ?></a></li>
+								<li><a href="http://boingboing.net/2011/12/02/stephen-colbert-explains-sopa.html"><?php esc_html_e( 'A very hilarious video from Stephen Colbert that satirizes the utter insanity of SOPA/PIPA.', 'protest-sopa-pipa' ); ?></a></li>
 							<ul>
 						</li>
 					</ol>
@@ -83,9 +83,9 @@ class protest_sopa_pipa {
 		?><script type="text/javascript">
 			jQuery(document).ready(function(){
 				var docHeight = jQuery(document).height();
-				var contentHeight = jQuery('#stop-sopa-content').height();
+				var contentHeight = jQuery('#protest-sopa-pipa-content').height();
 				var cssHeight = docHeight > contentHeight ? docHeight : contentHeight;
-				jQuery('#stop-sopa-background').css({
+				jQuery('#protest-sopa-pipa-background').css({
 					'height' : cssHeight + 'px'
 					// keeping this space for more, just in case :)
 				});
@@ -94,8 +94,8 @@ class protest_sopa_pipa {
 	}
 	
 	public function scripts() {
-		wp_register_style( 'stopsopa', plugins_url( 'protest-sopa-pipa.css', __FILE__ ) );
-		wp_enqueue_style( 'stopsopa' );
+		wp_register_style( 'protest-sopa-pipa', plugins_url( 'protest-sopa-pipa.css', __FILE__ ) );
+		wp_enqueue_style( 'protest-sopa-pipa' );
 		wp_enqueue_script( 'jquery' );
 	}
 	
