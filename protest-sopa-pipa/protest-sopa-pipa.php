@@ -31,10 +31,11 @@ class protest_sopa_pipa {
 	public $start = 1326891600; // 1/18/2012 8am EST
 	public $end = 1326934800; // 1/18/2012 8pm EST
 
-	public function __construct() {		
-		if ( ( time() > $this->start ) && ( time() < $this->end ) )
+	public function __construct() {
+		$time = time();	
+		if ( ( $time > $this->start ) && ( $time < $this->end ) )
 			$this->on();
-		elseif ( time() > $this->end )
+		elseif ( $time > $this->end )
 			$this->off();
 	}
 	
