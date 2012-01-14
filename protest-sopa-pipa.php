@@ -25,9 +25,9 @@ Version: 1.0
 
 // I give you the gift of protest.
 
-new stop_sopa;
+new protest_sopa_pipa;
 
-class stop_sopa {
+class protest_sopa_pipa {
 	public $start = 1326891600; // 1/18/2012 8am EST
 	public $end = 1326934800; // 1/18/2012 8pm EST
 
