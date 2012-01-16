@@ -28,21 +28,26 @@ Version: 1.0
 new protest_sopa_pipa;
 
 class protest_sopa_pipa {
-	public $start = "2012-01-18 08:00:00 -05:00"; // 1/18/2012 8am EST
-	public $end = "2012-01-18 20:00:00 -05:00"; // 1/18/2012 8pm EST
+	public $start; // 1/18/2012 8am EST
+	public $end; // 1/18/2012 8pm EST
+	public $time;
 
 	public function __construct() {
-		$time = time();	
-		$start = strtotime($this->start);
-		$end = strtotime($this->end);
+		$this->time = time();	
+		$this->start = strtotime("2012-01-18 08:00:00 -05:00");
+		$this->end = strtotime("2012-01-18 20:00:00 -05:00");
 		
-		if ( ( $time > $start ) && ( $time < $end ) )
+		if ( ( $this->time > $this->start ) && ( $this->time < $this->end ) )
 			$this->on();
-		elseif ( $time > $end )
+		elseif ( $this->time > $this->end )
 			$this->off();
 	}
 	
 	public function on() {
+		@header("HTTP/1.1 503 Service Temporarily Unavailable");
+		@header("Status: 503 Service Temporarily Unavailable");
+		@header("Retry-After: " . ($this->end - $this->time));
+		@header("Connection: Close");		
 		add_action( 'init', array( &$this, 'hooks' ) );
 	}
 	
@@ -67,13 +72,13 @@ class protest_sopa_pipa {
 					<p><?php esc_html_e( 'Below, you will find resources that will help you understand the devastating consequences of SOPA/PIPA. You will also find information on how to contact your elected leaders.', 'protest-sopa-pipa' ); ?></p>
 					<p><?php esc_html_e( 'If we stand in solidarity against SOPA/PIPA, we can defeat it and in doing so alter the course of human history. Please, take action now.', 'protest-sopa-pipa' ); ?></p>
 					<ol>
-						<li><a href="http://projects.propublica.org/sopa/"> <?php esc_html_e( 'Click here to find out where your member of Congress stands on this issue.', 'protest-sopa-pipa' ); ?></a></li>
-						<li><a href="http://www.house.gov/representatives/"><?php esc_html_e( 'Click here for a list of Representatives and their contact number. Call them and express your concern about SOPA and PIPA.', 'protest-sopa-pipa' ); ?></a></li>
+						<li><a rel="nofollow" href="http://projects.propublica.org/sopa/"> <?php esc_html_e( 'Click here to find out where your member of Congress stands on this issue.', 'protest-sopa-pipa' ); ?></a></li>
+						<li><a rel="nofollow" href="http://www.house.gov/representatives/"><?php esc_html_e( 'Click here for a list of Representatives and their contact number. Call them and express your concern about SOPA and PIPA.', 'protest-sopa-pipa' ); ?></a></li>
 						<li><p><?php esc_html_e( 'Find out what others have to say about SOPA/PIPA:', 'protest-sopa-pipa' ); ?></p>
 							<ul>
-								<li><a href="http://www.cdt.org/report/growing-chorus-opposition-stop-online-piracy-act"><?php esc_html_e( 'A comprehensive list of opinions about SOPA/PIPA from sources such as the inventors of the internet, The Heritage Foundation, the ACLU and many others.', 'protest-sopa-pipa' ); ?></a></li>
-								<li><a href="http://wordpress.org/news/2012/01/help-stop-sopa-pipa/"><?php esc_html_e( 'A great write up from WordPress, along with a video that makes SOPA/PIPA easy to understand.', 'protest-sopa-pipa' ); ?></a></li>
-								<li><a href="http://boingboing.net/2011/12/02/stephen-colbert-explains-sopa.html"><?php esc_html_e( 'A very hilarious video from Stephen Colbert that satirizes the utter insanity of SOPA/PIPA.', 'protest-sopa-pipa' ); ?></a></li>
+								<li><a rel="nofollow" href="http://www.cdt.org/report/growing-chorus-opposition-stop-online-piracy-act"><?php esc_html_e( 'A comprehensive list of opinions about SOPA/PIPA from sources such as the inventors of the internet, The Heritage Foundation, the ACLU and many others.', 'protest-sopa-pipa' ); ?></a></li>
+								<li><a rel="nofollow" href="http://wordpress.org/news/2012/01/help-stop-sopa-pipa/"><?php esc_html_e( 'A great write up from WordPress, along with a video that makes SOPA/PIPA easy to understand.', 'protest-sopa-pipa' ); ?></a></li>
+								<li><a rel="nofollow" href="http://boingboing.net/2011/12/02/stephen-colbert-explains-sopa.html"><?php esc_html_e( 'A very hilarious video from Stephen Colbert that satirizes the utter insanity of SOPA/PIPA.', 'protest-sopa-pipa' ); ?></a></li>
 							<ul>
 						</li>
 					</ol>
