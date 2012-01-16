@@ -28,14 +28,17 @@ Version: 1.0
 new protest_sopa_pipa;
 
 class protest_sopa_pipa {
-	public $start = 1326891600; // 1/18/2012 8am EST
-	public $end = 1326934800; // 1/18/2012 8pm EST
+	public $start = "2012-01-18 08:00:00 -05:00"; // 1/18/2012 8am EST
+	public $end = "2012-01-18 20:00:00 -05:00"; // 1/18/2012 8pm EST
 
 	public function __construct() {
 		$time = time();	
-		if ( ( $time > $this->start ) && ( $time < $this->end ) )
+		$start = strtotime($this->start);
+		$end = strtotime($this->end);
+		
+		if ( ( $time > $start ) && ( $time < $end ) )
 			$this->on();
-		elseif ( $time > $this->end )
+		elseif ( $time > $end )
 			$this->off();
 	}
 	
